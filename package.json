@@ -1,0 +1,28 @@
+{
+  "name": "ada3registroestudiantes",
+  "version": "1.0.0",
+  "description": "ADA 3 para la materia de programacion web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MRico98/ada3registroestudiantes.git"
+  },
+  "keywords": [
+    "CRUD",
+    "PHP",
+    "MYSQL"
+  ],
+  "author": "Manuel Rico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MRico98/ada3registroestudiantes/issues"
+  },
+  "homepage": "https://github.com/MRico98/ada3registroestudiantes#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
+  }
+}

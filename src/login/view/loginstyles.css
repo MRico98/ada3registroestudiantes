@@ -1,0 +1,29 @@
+body{
+    background-image: url("imagenes/UADY.jpg");
+}
+
+#seccionprincipallogin{
+    height: 350px;
+    width: 400px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+#botonlogin{
+    display: block;
+    margin: auto;
+}
+
+#titulologin{
+    background: floralwhite;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 57px;
+    margin-bottom: 20px;
+}
+
+input{
+    margin: 0px 0px 30px;
+}
