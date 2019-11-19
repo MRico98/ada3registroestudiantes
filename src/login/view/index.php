@@ -11,7 +11,6 @@
 <body>
 <?php
 if(isset($_GET['error'])) {
-
     ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>Error:</strong> <?php echo $_GET['error']?>

@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, powderblue , white);
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    display: inline-block;
+    padding: 10px 10px 10px 20px;
+    color: white;
+}
+
+h2{
+    padding-top: 30px;
+}
+
+#segundotitulo{
+    float: right;
+    padding: 10px 20px;
+}
+
+#cabeceraprincipal{
+    background: black;
+    width: 100%;
+    height: 70px;
+}
+
+#secciontabla{
+    text-align: center;
+    width: 600px;
+    height: 100px;
+    margin: auto;
+}
+
+.modal{
+    width: 200px;
+    height: 500px;
+}
