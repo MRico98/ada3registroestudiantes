@@ -1,14 +1,14 @@
 <?php
 
 
-class ModeloAbsoluto
+abstract class ModeloAbsoluto
 {
     private $conexion;
     private $servidor = "127.0.0.1:3307";
     private $nombreusuario = "Administrador";
     private $contrasenia = "Admin123";
     private $basededatos = "controlescolar";
-    private $consulta;
+    protected $consulta;
 
     public function __construct()
     {
