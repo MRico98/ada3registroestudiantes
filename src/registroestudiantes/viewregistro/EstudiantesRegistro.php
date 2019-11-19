@@ -88,12 +88,53 @@ $controlador->cerrarConexion();
                     </div>
                     <p><a href="#ex2" rel="modal:open"><button type="button">Modificar</button></a></p>
                 </td>
-                <td><button type="button" class="btn-secondary">Borrar</button></td>
+                <td>
+                    <div id="ex3" class="modal">
+                        <h3>¿Seguro que desea eliminar al usuario <?php echo $fila["Matricula"] ?>?</h3>
+                        <form action="../controllerregistro/ControllerEliminar.php" method="post">
+                            <input type="hidden" name="matricula" value="<?php echo $fila["Matricula"]?>">
+                            <input type="submit" class="btn btn-primary" value="Eliminar usuario">
+                        </form>
+                    </div>
+                    <p><a href="#ex3" rel="modal:open"><button type="button">Eliminar</button></a></p>
+                </td>
             </tr>
             <?php
         }
         ?>
     </table>
+    <article id="botonesfueratabla">
+        <div id="ex4" class="modal">
+            <h2>Agregar nuevo usuario a la base de datos</h2>
+            <form action="../controllerregistro/ControllerAgregar.php" method="post">
+                <div class="form-group">
+                    <label for="nombrenuevo">Nombre</label>
+                    <input type="text" name="nombre" class="form-control" id="nombrenuevo" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidopaternonuevo">Apellido paterno</label>
+                    <input type="text" name="apellidopaterno" class="form-control" id="apellidopaternonuevo" placeholder="Apellido paterno" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidomaternonuevo">Apellido materno</label>
+                    <input type="text" name="apellidomaterno" class="form-control" id="apellidomaternonuevo" placeholder="Apellido materno" required>
+                </div>
+                <div class="form-group">
+                    <label for="edadnuevo">Edad</label>
+                    <input type="text" name="edad" class="form-control" id="edadnuevo" placeholder="Edad" required>
+                </div>
+                <div class="form-group">
+                    <label for="contrasenianuevo">Contraseña</label>
+                    <input type="password" name="contrasenia" class="form-control" id="contrasenianuevo" placeholder="Contraseña" required>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Registrar nuevo usuario">
+            </form>
+        </div>
+        <p><a href="#ex4" rel="modal:open"><button type="button">Agregar nuevo usuario</button></a>
+                <a href="../controllerregistro/CerrarSesion.php">
+                <input type="submit" class="btn btn-danger" value="Cerrar sesion"></a>
+        </p>
+    </article>
 </section>
 </body>
 </html>

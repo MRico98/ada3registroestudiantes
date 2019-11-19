@@ -15,4 +15,14 @@ class ModelRegistro extends ModeloAbsoluto
         $this->getConexion()->query($peticion);
     }
 
+    public function eliminarAlumno($matricula){
+        $peticion = 'DELETE FROM controlescolar.estudiantes WHERE Matricula = '.$matricula.';';
+        $this->getConexion()->query($peticion);
+    }
+
+    public function agregarAlumno($nombre,$apellidopaterno,$apellidomaterno,$Edad,$contrasenia){
+        $peticion = 'INSERT INTO controlescolar.estudiantes (Nombre, ApellidoPaterno, ApellidoMaterno, Edad, Contrasenia) VALUES ("'.$nombre.'","'.$apellidopaterno.'","'.$apellidomaterno.'",'.$Edad.',"'.$contrasenia.'");';
+        $this->getConexion()->query($peticion);
+    }
+
 }

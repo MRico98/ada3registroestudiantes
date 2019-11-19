@@ -37,7 +37,26 @@ h2{
     margin: auto;
 }
 
-.modal{
-    width: 200px;
-    height: 500px;
+#ex1{
+    width: 400px;
+    height: 450px;
+}
+
+#ex2{
+    width: 400px;
+    height: 450px;
+}
+
+#ex3{
+    width: 400px;
+    height: 150px;
+}
+
+#ex4{
+    width: 400px;
+    height: 650px;
+}
+
+#botonesfueratabla{
+    margin: auto;
 }
