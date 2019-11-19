@@ -10,13 +10,17 @@
 </head>
 <body>
 <?php
-if(){
+if(isset($_GET['error'])) {
+
+    ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <strong>Error:</strong> <?php echo $_GET['error']?>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
+    <?php
+}
 ?>
 <section id="seccionprincipallogin">
     <form action="../controller/logincontroller.php" method="POST">

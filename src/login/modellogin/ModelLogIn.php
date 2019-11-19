@@ -9,7 +9,7 @@ class ModelLogIn extends ModeloAbsoluto
         $peticion = 'SELECT * FROM controlescolar.estudiantes WHERE Matricula LIKE "'.$username.'" AND Contrasenia LIKE "'.$password.'";';
         $query = $this->getConexion()->query($peticion);
         if($query->num_rows == 0){
-            throw new RuntimeException("IncorrectCredentials");
+            throw new RuntimeException("Credenciales+incorrectas");
         }
     }
 

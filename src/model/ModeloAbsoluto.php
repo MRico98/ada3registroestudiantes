@@ -14,7 +14,7 @@ abstract class ModeloAbsoluto
     {
         $this->conexion = new mysqli($this->getServidor(),$this->getNombreusuario(),$this->getContrasenia(),$this->getBasededatos());
         if($this->conexion->connect_error){
-            throw new RuntimeException("Fallo al conectar con la base de datos");
+            throw new RuntimeException("Fallo+al+conectar+con+la+base+de+datos");
         }
     }
 
